@@ -1,0 +1,25 @@
+Core goals
+
+1. As a user, I would like to arrive on a welcome page which strongly resenbles that of Uber
+2. As a user, I would like to click a button that will open a window containing a new Sudoku board
+3. As a user, I would like to click and drag tiles to place them on the board
+4. As a user, I would like to be notified with a color indicator if a placement is allowed or not
+5. As a user, I would like to be able to request a hint
+6. As a user, I would like the game to be timed, so I can keep track of my progress as a player
+5. As a user, I would like to be notified when I have won the game
+
+Stretch goals
+
+1. As a snarky troll, I would like the site to have a slideshow composed of black and white images of broken down cars
+2. As the project owner, I would like the app to be deployed to Heroku
+3. As the project owner, I would like the app routing to be handled in Sinatra
+4. As a user, I would like to be able to register with the application
+5. As a user, I would like to be able to log into the application
+6. As a user, I would like to be able to log out of the application
+7. As a user, I would like to have the application to have leaderboards
+
+Uberstretch goals
+
+1. As a snarky troll, I would like there to be an easter egg in the application
+
+
