@@ -95,6 +95,7 @@ p, a {
 
 .cell {
     float: left;
+    padding-bottom: 5px;
     border-radius: 5px;
     width: 35px;
     height: 35px;
@@ -102,7 +103,7 @@ p, a {
     background-color: #FFFFFF;
 }
 
-.cell.blue {
+.cell.selector {
     background-color: #1fbad6;
     margin-top: 20px;
 }
