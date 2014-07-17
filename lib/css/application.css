@@ -1,4 +1,8 @@
-p, a  {
+* {
+    box-sizing: border-box;
+}
+
+p, a {
     font-family: "museo-sans";
     color: #fff;
 }
@@ -6,7 +10,7 @@ p, a  {
 .slide {
     width: 100%;
     position: absolute;
-    z-index: 0;
+    z-index: -1;
 }
 
 #header {
@@ -27,22 +31,29 @@ p, a  {
     font-family: "museo";
     color: #FFFFFF;
     font-size: 24pt;
-    font-weight:100;
+    font-weight: 100;
     text-align: center;
-    letter-spacing:10px
+    letter-spacing: 10px
 }
 
-#content{
+#content {
     position: relative;
-    top: 280px;
+    top: 90px;
     width: 100%;
     z-index: 2;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
+}
+
+#hero {
+    position: relative;
+    top: 190px;
 }
 
 #content #herotext {
     font-size: 64pt;
-    text-shadow: 0 0 20px rgba(0,0,0,0.7);
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
     font-family: "museo-sans";
     text-transform: uppercase;
     color: #FFFFFF;
@@ -53,7 +64,7 @@ p, a  {
     padding: 5px 10px;
     font-size: 18px;
     color: #fff;
-    background-color: rgba(7,7,22,.5);
+    background-color: rgba(7, 7, 22, .5);
     text-transform: uppercase;
     line-height: 27px;
 }
@@ -71,5 +82,32 @@ p, a  {
     text-decoration: none;
     color: #fff;
     cursor: pointer;
+}
+
+.board {
+    position: relative;
+    top: 20px;
+    display: inline-block;
+    padding: 10px;
+    max-width: 500px;
+    background-color: rgba(7, 7, 22, .5);
+}
+
+.cell {
+    float: left;
+    border-radius: 5px;
+    width: 35px;
+    height: 35px;
+    margin: 4px;
+    background-color: #FFFFFF;
+}
+
+.cell.blue {
+    background-color: #1fbad6;
+    margin-top: 20px;
+}
+
+#tileselector {
+    background-color: #FF00FF;
 }
 
