@@ -2,9 +2,9 @@
     box-sizing: border-box;
 }
 
-p, a {
+body {
     font-family: "museo-sans";
-    color: #fff;
+    color: #FFF;
 }
 
 .slide {
@@ -19,7 +19,7 @@ p, a {
     height: 90px;
     z-index: 1;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0) 100%);
-    border-bottom: 1px solid #999999;
+    border-bottom: 1px solid #999;
 }
 
 #header #brand {
@@ -29,7 +29,7 @@ p, a {
 
 #header #brand p {
     font-family: "museo";
-    color: #FFFFFF;
+    color: #FFF;
     font-size: 24pt;
     font-weight: 100;
     text-align: center;
@@ -72,7 +72,7 @@ p, a {
 .button {
     display: inline-block;
     padding: 5px 50px;
-    background-color: #1fbad6;
+    background-color: #1FBAD6;
     -webkit-border-radius: 1px;
     -moz-border-radius: 1px;
     border-radius: 1px;
@@ -84,7 +84,7 @@ p, a {
     cursor: pointer;
 }
 
-.board {
+.game {
     position: relative;
     top: 20px;
     display: inline-block;
@@ -95,20 +95,34 @@ p, a {
 
 .cell {
     float: left;
-    padding-bottom: 5px;
-    border-radius: 5px;
+    border-radius: 4px;
     width: 35px;
     height: 35px;
     margin: 4px;
-    background-color: #FFFFFF;
+    color: #BBB;
+    padding-top: 3px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 24px;
+    font-weight: 500;
+    background-color: #FFF;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
 }
 
 .cell.selector {
-    background-color: #1fbad6;
+    background-color: #1FBAD6;
+    color: #FFF;
     margin-top: 20px;
 }
 
-#tileselector {
-    background-color: #FF00FF;
+.cell.selector.active {
+    background-color: #000;
+    border: 2px solid #1FBAD6;
 }
 
