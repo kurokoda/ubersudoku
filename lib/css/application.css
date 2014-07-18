@@ -115,6 +115,10 @@ body {
     cursor: pointer;
 }
 
+.cell.locked {
+    cursor:default;
+}
+
 .cell.selector {
     background-color: #1FBAD6;
     color: #FFF;

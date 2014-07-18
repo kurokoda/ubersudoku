@@ -1,0 +1,49 @@
+- IF less than 81 cells are filled:
+
+	- IF all possible integers [1-9] have been used in current cell:
+
+		- Clear used integers in a current cell.
+		- Move one step back.
+		- Load already used integers IF any.
+
+		-- Call the function again.
+
+	- ELSE:
+
+		- Mark an error boolean to 'false'.
+		- Generate a random integer to current cell from a list of possible integers.
+
+		- IF current integer is same than in ...
+
+			* 3x3 group of blocks.
+			* a same row.
+			* a same column.
+
+			- THEN Mark an error boolean to 'true'.
+
+		- END
+
+		- IF no errors:
+
+			- Add current integer to a Sudoku array.
+			- Add current integer to an array of used integers.
+			- Move one step forward.
+			- Clear possible integers. / Back to default.
+
+			-- Call the function again.
+
+		- ELSE:
+
+			- Remove the integer from possible values.
+
+			-- Call the function again.
+
+		- END
+
+	- END
+
+- ELSE:
+
+	[Ready!] A valid Sudoku table is done.
+
+- END
