@@ -99,13 +99,11 @@ body {
     width: 35px;
     height: 35px;
     margin: 4px;
-    color: #BBB;
     padding-top: 3px;
     text-align: center;
     vertical-align: middle;
     font-size: 24px;
     font-weight: 500;
-    background-color: #FFF;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -116,25 +114,36 @@ body {
 }
 
 .cell.locked {
-    cursor:default;
+    color: #1FBAD6;
+    cursor: default;
 }
 
 .cell.selector {
     background-color: #1FBAD6;
     color: #FFF;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.hover-in {
-    background: #1FBAD6;
+.cell.white {
+    color: #000;
+    background-color: #FFF;
+}
+
+.cell.grey {
+    color: #000;
+    background-color: #BBB;
+}
+
+.cell.hover-in {
+    background-color: #1FBAD6;
     transition: 0.5s;
     -moz-transition: 0.5s;
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
 }
 
-.hover-out {
-    background: #FFF;
+.cell.hover-out {
     transition: 0.5s;
     -moz-transition: 0.5s;
     -webkit-transition: 0.5s;
