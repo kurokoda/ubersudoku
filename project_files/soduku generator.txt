@@ -1,0 +1,16 @@
+ if (this.attempts[this.count].length == 9) {
+            this.attempts[this.count] = [];
+            this.count--;
+            this.populateCell()
+        }
+        var candidates = this.getCandidates();
+        for (var i = 0; i < candidates.length; i++) {
+            console.log("testing candidate_"+i)
+            var candidate = candidates[i];
+            this.attempts[this.count].push(candidate);
+            if (this.isViable(candidate)) {
+                this.solutions[this.count] = candidate;
+                this.count++;
+                break;
+            }
+        }
