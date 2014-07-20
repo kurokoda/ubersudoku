@@ -5,12 +5,17 @@
 /*Mobile*/
 @media only screen and (max-width: 480px) {
     content #herotext {
-        font-size: 36pt;
+        font-size: 44pt;
         font-weight: 100;
     }
 
+    #content #tagline {
+        font-size: 14pt;
+    }
+
     #header #brand p {
-        font-size: 18pt;
+        padding-top: 14px;
+        font-size: 14pt;
         font-weight: 100;
     }
 }
@@ -18,8 +23,12 @@
 /*Tablet*/
 @media only screen and (min-width: 481px) and (max-width: 768px) {
     #content #herotext {
-        font-size: 48pt;
+        font-size: 44pt;
         font-weight: 100;
+    }
+
+    #content #tagline {
+        font-size: 18pt;
     }
 
     #header #brand p {
@@ -35,6 +44,10 @@
         font-weight: 100;
     }
 
+    #content #tagline {
+        font-size: 18pt;
+    }
+
     #header #brand p {
         font-size: 24pt;
         font-weight: 100;
@@ -42,8 +55,12 @@
 }
 
 body {
-    font-family: "museo-sans";
+    font-family: "museo-sans", "sans-serif";
     color: #FFF;
+}
+
+#background {
+
 }
 
 .slide {
@@ -58,6 +75,7 @@ body {
     height: 90px;
     z-index: 1;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0) 100%);
+    vertical-align: middle;
     border-bottom: 1px solid #999;
 }
 
@@ -69,7 +87,7 @@ body {
     font-family: "museo";
     color: #FFF;
     text-align: center;
-    letter-spacing: 10px
+    letter-spacing: 10px;
 }
 
 #content {
@@ -96,8 +114,6 @@ body {
 #content #tagline {
     display: inline-block;
     padding: 5px 10px;
-    font-size: 18px;
-    color: #fff;
     background-color: rgba(7, 7, 22, .5);
     text-transform: uppercase;
     line-height: 27px;
@@ -128,6 +144,7 @@ body {
 }
 
 .cell {
+    color: #000;
     float: left;
     border-radius: 4px;
     width: 35px;
@@ -148,25 +165,24 @@ body {
 }
 
 .cell.locked {
-    color: #1FBAD6;
+    color: #888;
     cursor: default;
 }
 
 .cell.selector {
     background-color: #1FBAD6;
     color: #FFF;
-    margin-top: 20px;
     margin-bottom: 20px;
 }
 
 .cell.white {
-    color: #000;
     background-color: #FFF;
+    border: 1px solid #111;
 }
 
 .cell.grey {
-    color: #000;
-    background-color: #BBB;
+    background-color: #AAA;
+    border: 1px solid #111;
 }
 
 .cell.red {
