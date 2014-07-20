@@ -4,12 +4,12 @@
 
 /*Mobile*/
 @media only screen and (max-width: 480px) {
-    content #herotext {
+    .herotext {
         font-size: 44pt;
         font-weight: 100;
     }
 
-    #content #tagline {
+    .tagline {
         font-size: 14pt;
     }
 
@@ -22,12 +22,12 @@
 
 /*Tablet*/
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-    #content #herotext {
+    .herotext {
         font-size: 44pt;
         font-weight: 100;
     }
 
-    #content #tagline {
+    .tagline {
         font-size: 18pt;
     }
 
@@ -39,12 +39,12 @@
 
 /*Desktop*/
 @media only screen and (min-width: 769px) {
-    #content #herotext {
+    .herotext {
         font-size: 64pt;
         font-weight: 100;
     }
 
-    #content #tagline {
+    .tagline {
         font-size: 18pt;
     }
 
@@ -60,11 +60,28 @@ body {
 }
 
 #background {
-
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 .slide {
     width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.slide-container {
+    position: absolute;
+    width: 100%;
+}
+
+.image {
+    width: 100%;
+    left: 0%;
     position: absolute;
     z-index: -1;
 }
@@ -91,27 +108,23 @@ body {
 }
 
 #content {
-    position: relative;
+    position: absolute;
     top: 90px;
     width: 100%;
-    z-index: 2;
+    z-index: 3;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
 
-#hero {
-    position: relative;
-    top: 190px;
-}
-
-#content #herotext {
+.herotext {
+    margin-top: 25%;
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
     text-transform: uppercase;
     color: #FFFFFF;
 }
 
-#content #tagline {
+.tagline {
     display: inline-block;
     padding: 5px 10px;
     background-color: rgba(7, 7, 22, .5);
