@@ -2,6 +2,42 @@
     box-sizing: border-box;
 }
 
+/*Mobile*/
+@media only screen and (max-width: 480px) {
+    content #herotext {
+        font-size: 24pt;
+    }
+
+    #header #brand p {
+        font-size: 18pt;
+        font-weight: 100;
+    }
+}
+
+/*Tablet*/
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    #content #herotext {
+        font-size: 48pt;
+    }
+
+    #header #brand p {
+        font-size: 22pt;
+        font-weight: 100;
+    }
+}
+
+/*Desktop*/
+@media only screen and (min-width: 769px) {
+    #content #herotext {
+        font-size: 64pt;
+    }
+
+    #header #brand p {
+        font-size: 24pt;
+        font-weight: 100;
+    }
+}
+
 body {
     font-family: "museo-sans";
     color: #FFF;
@@ -23,15 +59,12 @@ body {
 }
 
 #header #brand {
-    color: #FFFFFF;
     text-align: center;
 }
 
 #header #brand p {
     font-family: "museo";
     color: #FFF;
-    font-size: 24pt;
-    font-weight: 100;
     text-align: center;
     letter-spacing: 10px
 }
@@ -52,9 +85,7 @@ body {
 }
 
 #content #herotext {
-    font-size: 64pt;
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
-    font-family: "museo-sans";
     text-transform: uppercase;
     color: #FFFFFF;
 }
@@ -135,7 +166,19 @@ body {
     background-color: #BBB;
 }
 
-.cell.hover-in {
+.cell.red {
+    background-color: #FF197F;
+}
+
+.cell.med-red {
+    background-color: #FF4FA7;
+}
+
+.cell.light-red {
+    background-color: #FF88CA;
+}
+
+.cell.fade-in {
     background-color: #1FBAD6;
     transition: 0.5s;
     -moz-transition: 0.5s;
@@ -143,7 +186,7 @@ body {
     -o-transition: 0.5s;
 }
 
-.cell.hover-out {
+.cell.fade-out {
     transition: 0.5s;
     -moz-transition: 0.5s;
     -webkit-transition: 0.5s;
