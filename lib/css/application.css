@@ -102,7 +102,7 @@ body {
     padding: 10px;
     max-width: 500px;
     min-width: 387px;
-    height: 570px;
+    min-height: 570px;
     background-color: rgba(7, 7, 22, .5);
 }
 
@@ -235,6 +235,10 @@ body {
         width: 30px;
         height: 30px;
         font-size: 18px;
+    }
+
+    .frame{
+        min-width: 370px;
     }
 }
 
