@@ -6,12 +6,14 @@ A sleeker, blacker sudoku experience
 Design
 ==========
 
-From the beginning, I wanted to brand the application to resemble Uber's site as closely as possible. While the images are taken from the the Uber site, none of the CSS was 'liberated' from Uber. The CSS was entirely handrolled. The slideshow functionality is also built from scratch, and is deceptively simple.
+From the beginning, I wanted to brand the application to resemble Uber's site as closely as possible. 
+While the images are taken from the the Uber site, none of the CSS was 'liberated' from Uber. The CSS was entirely handrolled.
+The slideshow functionality is also built from scratch, and is deceptively simple.
 
 UI/UX
 ==========
 
-My favorite feature is the 'heatmapping' of errors. If a tile is in a row, column, or a block which contains errors, it's css class reflects the number of errors it is related to.
+My favorite feature is the 'heatmapping' of errors. If a tile is in a row, column, or a block which contains errors, its css class reflects the number of errors it is related to.
 Additionally, the keyboard mapping of tile values makes me pretty happy.
 
 Structure
@@ -33,4 +35,10 @@ Ubersudoku was written using OO principles, seperating the various responsibilit
 
 The only library used in this app was JQuery. Originally, I intended to use JQuery-UI for it's drag-and-drop functionality, but rethought the UI. In the end, I decided against drag-and-drop, and the library was unused. Additionally, I incorporated normalize.css 
 
+
+Deployment
+==========
+
+Moving forward
+==========
 
