@@ -82,7 +82,7 @@ body {
 
 .button {
     display: inline-block;
-    padding: 5px 50px;
+    padding: 5px 40px;
     background-color: #1FBAD6;
     -webkit-border-radius: 1px;
     -moz-border-radius: 1px;
@@ -100,8 +100,8 @@ body {
     top: 20px;
     display: inline-block;
     padding: 10px;
-    max-width: 500px;
-    min-width: 387px;
+    max-width: 470px;
+    min-width: 390px;
     min-height: 570px;
     background-color: rgba(7, 7, 22, .5);
 }
