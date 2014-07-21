@@ -8,6 +8,12 @@ Design
 
 From the beginning, I wanted to brand the application to resemble Uber's site as closely as possible. While the images are taken from the the Uber site, none of the CSS was 'liberated' from Uber. The CSS was entirely handrolled. The slideshow functionality is also built from scratch, and is deceptively simple.
 
+UI/UX
+==========
+
+My favorite feature is the 'heatmapping' of errors. If a tile is in a row, column, or a block which contains errors, it's css class reflects the number of errors it is related to.
+Additionally, the keyboard mapping of tile values makes me pretty happy.
+
 Structure
 ==========
 
